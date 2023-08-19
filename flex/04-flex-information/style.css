@@ -10,7 +10,31 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center; /* Should have put in body{} */
+  margin: 32px; /* Solution had margin-bottom */
 }
+
+.media-container {
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+}
+
+.media {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; 
+  max-width: 200px;
+  /* Only max-width is needed. Defaults to display:block and having text-align:center
+  will keep all items inside of .media centered. */
+}
+
+.text {
+  text-align: center; /* Should have put in body {} */
+}
+
+
 
 /* do not edit this footer */
 .footer {
